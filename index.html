@@ -8,5 +8,27 @@
     <script src="piano.js" defer></script>
     <title>Piano</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">CLAP</span>
+      </div>
+
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">HIHAT</span>
+      </div>
+
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">KICK</span>
+      </div>
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+  </body>
 </html>
